@@ -1,0 +1,44 @@
+/** importando el archivo de las variables */
+@import "./variables";
+
+
+body{
+    background-color: darksalmon;
+}
+
+h1{
+    font-family: $fuente;
+    text-align: center;
+    color: $colorBlanco;
+    font-size: 3rem;
+}
+
+.contenedor{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora{
+    background-color: $colorAzul;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.button-operador{
+    /** incluyendo el mixin del buttonStyle */
+    @include buttonStyle($colorBlanco, $colorCeleste);
+}
+
+.button-numero{
+    @include buttonStyle(black, $colorBlanco);
+}
+
+#texto{
+    width: 200px;
+    height: 25px;
+    background-color: $colorAzul;
+    color: $colorBlanco;
+    border: none;
+}
